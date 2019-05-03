@@ -14,3 +14,4 @@ Repository associated with the course Deep Learning at the RUG.
 
 ## Datasets
 - MNIST/EMNIST dataset
+- CIFAR-10
