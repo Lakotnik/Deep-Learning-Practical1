@@ -38,12 +38,12 @@ model.add(layers.MaxPooling2D(pool_size=(4,4)))
 model.add(layers.Dropout(0.25))
 """
 
-model.add(Flatten())
-model.add(Dense(512))
-model.add(Activation(activation))
-model.add(Dropout(0.5))
-model.add(Dense(num_classes))
-model.add(Activation('softmax'))
+model.add(layers.Flatten())
+model.add(layers.Dense(512))
+model.add(layers.Activation(activation))
+model.add(layers.Dropout(0.5))
+model.add(layers.Dense(num_classes))
+model.add(layers.Activation('softmax'))
 
 opt = keras.optimizers.rmsprop(lr=0.00001,decay=1e-6)
 
