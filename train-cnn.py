@@ -14,7 +14,7 @@ activation = 'relu'
 
 save_dir = os.path.join(os.getcwd(), 'model_save')
 
-(x_train, y_train), (x_test, y_test) = cifar100.load_data()
+(x_train, y_train), (x_test, y_test) = cifar10.load_data()
 print("data shape: {}".format(x_train.shape))
 
 #y_train = keras.
