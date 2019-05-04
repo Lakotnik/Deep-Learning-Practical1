@@ -47,7 +47,7 @@ model.add(layers.Activation('softmax'))
 
 opt = keras.optimizers.rmsprop(lr=0.00001,decay=1e-6)
 
-model.compile(loss='categorical_crossentropy',optimier=opt,metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy',optimizer=opt,metrics=['accuracy'])
 
 # Train the model
 model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,validation_data=(x_test,y_test),shuffle=True)
