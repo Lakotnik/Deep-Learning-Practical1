@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --time=01:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=8000M
+#SBATCH --job-name="Keras_cifar10_test"
+
+module load TensorFlow/1.12.0-fosscuda-2018a-Python-3.6.4
+
+python train-cnn.py
