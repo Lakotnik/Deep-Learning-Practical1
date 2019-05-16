@@ -1,0 +1,78 @@
+2019-05-16 11:33:05.670622: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX512F
+2019-05-16 11:33:05.894121: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-05-16 11:33:05.894982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GRID V100D-32Q major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:02:00.0
+totalMemory: 32.00GiB freeMemory: 29.59GiB
+2019-05-16 11:33:05.895034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-05-16 11:33:07.143672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-05-16 11:33:07.143753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-05-16 11:33:07.143770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-05-16 11:33:07.143924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 28702 MB memory) -> physical GPU (device: 0, name: GRID V100D-32Q, pci bus id: 0000:02:00.0, compute capability: 7.0)
+2019-05-16 11:33:07.145179: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using softsign activation function for everything except the last layer.
+data shape: (50000, 32, 32, 3)
+Saved trained model at /home/p286668/schoolwork/dlearning/Deep-Learning-Practical1/model_save/cifar10_softsign.h5 
+
+   32/10000 [..............................] - ETA: 0s
+  800/10000 [=>............................] - ETA: 0s
+ 1568/10000 [===>..........................] - ETA: 0s
+ 2336/10000 [======>.......................] - ETA: 0s
+ 3104/10000 [========>.....................] - ETA: 0s
+ 3872/10000 [==========>...................] - ETA: 0s
+ 4640/10000 [============>.................] - ETA: 0s
+ 5408/10000 [===============>..............] - ETA: 0s
+ 6176/10000 [=================>............] - ETA: 0s
+ 6944/10000 [===================>..........] - ETA: 0s
+ 7712/10000 [======================>.......] - ETA: 0s
+ 8480/10000 [========================>.....] - ETA: 0s
+ 9248/10000 [==========================>...] - ETA: 0s
+10000/10000 [==============================] - 1s 67us/step
+/software/software/h5py/2.7.1-fosscuda-2018a-Python-3.6.4/lib/python3.6/site-packages/h5py-2.7.1-py3.6-linux-x86_64.egg/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+------------------------------------------------
+Training took 867.6558232307434 seconds.
+Activation:  softsign
+Dropout:  0.4
+Test loss: 0.7204327838897705
+Test accuracy: 0.75
+------------------------------------------------
+
+
+###############################################################################
+Peregrine Cluster
+Job 5859602 for user 'p286668'
+Finished at: Thu May 16 11:47:53 CEST 2019
+
+Job details:
+============
+
+Name                : Keras_cifar10
+User                : p286668
+Partition           : gputest
+Nodes               : pg-gpu17
+Cores               : 12
+State               : COMPLETED
+Submit              : 2019-05-16T10:44:42
+Start               : 2019-05-16T11:32:57
+End                 : 2019-05-16T11:47:53
+Reserved walltime   :   01:30:00
+Used walltime       :   00:14:56
+Used CPU time       : 1-08:46:01 (efficiency: 1097.11%)
+% User (Computation): 82.51%
+% System (I/O)      : 17.49%
+Mem reserved        : 8000M/node
+Max Mem used        : 2.87G (pg-gpu17)
+Max Disk Write      : 40.96K (pg-gpu17)
+Max Disk Read       : 1.19M (pg-gpu17)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
