@@ -1,0 +1,72 @@
+2019-05-06 16:15:50.268541: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX512F
+2019-05-06 16:15:50.466804: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-05-06 16:15:50.467527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GRID V100D-32Q major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:02:00.0
+totalMemory: 32.00GiB freeMemory: 29.59GiB
+2019-05-06 16:15:50.467577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-05-06 16:15:51.752355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-05-06 16:15:51.752428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-05-06 16:15:51.752445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-05-06 16:15:51.752616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 28702 MB memory) -> physical GPU (device: 0, name: GRID V100D-32Q, pci bus id: 0000:02:00.0, compute capability: 7.0)
+2019-05-06 16:15:51.753560: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using tanh activation function for everything except the last layer.
+data shape: (50000, 32, 32, 3)
+Saved trained model at /home/p286668/schoolwork/dlearning/Deep-Learning-Practical1/model_save/cifar10_tanh.h5 
+
+   32/10000 [..............................] - ETA: 0s
+ 1280/10000 [==>...........................] - ETA: 0s
+ 2560/10000 [======>.......................] - ETA: 0s
+ 3808/10000 [==========>...................] - ETA: 0s
+ 5088/10000 [==============>...............] - ETA: 0s
+ 6368/10000 [==================>...........] - ETA: 0s
+ 7648/10000 [=====================>........] - ETA: 0s
+ 8928/10000 [=========================>....] - ETA: 0s
+10000/10000 [==============================] - 0s 40us/step
+/software/software/h5py/2.7.1-fosscuda-2018a-Python-3.6.4/lib/python3.6/site-packages/h5py-2.7.1-py3.6-linux-x86_64.egg/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+------------------------------------------------
+Training took 1259.1697244644165 seconds.
+Activation:  tanh
+Test loss: 0.9207087273597717
+Test accuracy: 0.6803
+------------------------------------------------
+
+
+###############################################################################
+Peregrine Cluster
+Job 5628128 for user 'p286668'
+Finished at: Mon May  6 16:36:50 CEST 2019
+
+Job details:
+============
+
+Name                : Keras_cifar10
+User                : p286668
+Partition           : gputest
+Nodes               : pg-gpu20
+Cores               : 12
+State               : COMPLETED
+Submit              : 2019-05-06T13:05:01
+Start               : 2019-05-06T16:15:41
+End                 : 2019-05-06T16:36:50
+Reserved walltime   :   01:30:00
+Used walltime       :   00:21:09
+Used CPU time       : 2-01:01:57 (efficiency: 1159.16%)
+% User (Computation): 87.72%
+% System (I/O)      : 12.28%
+Mem reserved        : 8000M/node
+Max Mem used        : 2.82G (pg-gpu20)
+Max Disk Write      : 40.96K (pg-gpu20)
+Max Disk Read       : 1.19M (pg-gpu20)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
